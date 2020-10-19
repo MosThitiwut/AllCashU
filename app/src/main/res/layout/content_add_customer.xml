@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_add_customer"
+    >
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/textInputLayout"
+          android:layout_width="766dp"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="40dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginEnd="40dp"
+          android:backgroundTint="#EC5C13"
+          android:hint="ชื่อ :"
+          android:textColorHint="#EC5C13"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/imageViewAddCus">
+
+         <com.google.android.material.textfield.TextInputEditText
+             android:id="@+id/editText_CustomerName"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="40dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginEnd="40dp"
+             android:backgroundTint="#EC5C13"
+             android:textColorHint="#EC5C13" />
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/textInputLayout2"
+          android:layout_width="766dp"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="40dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginEnd="40dp"
+          android:backgroundTint="#EC5C13"
+          android:hint="บ้านเลขที่ :"
+          android:textColorHint="#EC5C13"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+         <com.google.android.material.textfield.TextInputEditText
+             android:id="@+id/editText_Address"
+             android:inputType="phone"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="40dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginEnd="40dp"
+             android:backgroundTint="#EC5C13"
+             android:textColorHint="#EC5C13" />
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/textInputLayout4"
+          android:layout_width="766dp"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="40dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginEnd="40dp"
+          android:hint="หมู่ที่ :"
+          android:backgroundTint="#EC5C13"
+          android:textColorHint="#EC5C13"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+
+         <com.google.android.material.textfield.TextInputEditText
+             android:id="@+id/editText_Village"
+             android:inputType="number"
+             android:maxLength="2"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="40dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginEnd="40dp"
+              />
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/textInputLayout3"
+          android:layout_width="766dp"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="40dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginEnd="40dp"
+          android:backgroundTint="#EC5C13"
+          android:hint="เบอร์โทรศัพท์ :"
+          android:textColorHint="#EC5C13"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
+
+         <com.google.android.material.textfield.TextInputEditText
+             android:id="@+id/editText_Tel"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="40dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginEnd="40dp"
+             android:backgroundTint="#EC5C13"
+             android:inputType="number"
+             android:maxLength="10"
+             android:textColorHint="#EC5C13" />
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <TextView
+          android:id="@+id/textView7"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="150dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginEnd="10dp"
+          android:text="จังหวัด :"
+          android:textSize="20dp"
+          app:layout_constraintEnd_toStartOf="@+id/spinner_Province"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
+
+      <Spinner
+          android:id="@+id/spinner_Province"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="20dp"
+          android:layout_marginTop="5dp"
+          app:layout_constraintStart_toEndOf="@+id/textView7"
+          app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+          tools:ignore="MissingConstraints" />
+
+      <TextView
+          android:id="@+id/textView8"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="150dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginEnd="20dp"
+          android:text="อำเภอ :"
+          android:textSize="20dp"
+          app:layout_constraintEnd_toStartOf="@+id/spinner_District"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+      <Spinner
+          android:id="@+id/spinner_SaleArea"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="20dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          app:layout_constraintBottom_toTopOf="@+id/spinner_District"
+          app:layout_constraintStart_toEndOf="@+id/textView8"
+          app:layout_constraintTop_toBottomOf="@+id/spinner_Province" />
+
+      <TextView
+          android:id="@+id/textView9"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="150dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginEnd="10dp"
+          android:text="ตำบล :"
+          android:textSize="20dp"
+          app:layout_constraintEnd_toStartOf="@+id/spinner_SaleArea"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+      <Spinner
+          android:id="@+id/spinner_District"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="20dp"
+          android:layout_marginTop="5dp"
+          android:layout_marginBottom="10dp"
+          app:layout_constraintBottom_toTopOf="@+id/spinner_ShopType"
+          app:layout_constraintStart_toEndOf="@+id/textView9"
+          app:layout_constraintTop_toBottomOf="@+id/spinner_SaleArea" />
+
+      <TextView
+          android:id="@+id/textView13"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="150dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginBottom="50dp"
+          android:text="ประเภท :"
+          android:textSize="20dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toStartOf="@+id/spinner_ShopType"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+      <Spinner
+          android:id="@+id/spinner_ShopType"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="17dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="0dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toEndOf="@+id/textView9"
+          app:layout_constraintTop_toBottomOf="@+id/spinner_SaleArea" />
+
+      <CheckBox
+          android:id="@+id/chb_Tax"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="158dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+      <ImageView
+          android:id="@+id/imageViewAddCus"
+          android:layout_width="221dp"
+          android:layout_height="204dp"
+          android:layout_marginStart="273dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginEnd="273dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:srcCompat="@drawable/ic_photo_camera_black_256dp" />
+
+      <TextView
+          android:id="@+id/textView14"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="20dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:text="ขอใบกำกับภาษีเต็มรูป"
+          android:textSize="20dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toEndOf="@+id/chb_Tax"
+          app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+       <RelativeLayout
+           android:padding="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:background="@drawable/white_grey_border_bottom">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WEBSERVICELOCAL SETTINGS"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+       </RelativeLayout>
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_grey_border_bottom">
+            <TextView
+                android:id="@+id/IP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Host \n WebServiec Host : "
+                android:textColor="@color/black"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_grey_border_bottom">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Port \n WebService Port : "
+                android:textColor="@color/black"
+                />
+        </RelativeLayout>
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/white_grey_border_bottom">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WEBSERVICEONLINE SETTINGS"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_grey_border_bottom">
+        <TextView
+            android:id="@+id/DNS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Host \n WebServiec Host : "
+            android:textColor="@color/black"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_grey_border_bottom">
+        <TextView
+            android:id="@+id/PortDNS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Port \n WebService Port : "
+            android:textColor="@color/black"
+            />
+    </RelativeLayout>
+</LinearLayout>
